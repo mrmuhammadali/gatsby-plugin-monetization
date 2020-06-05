@@ -1,6 +1,6 @@
 {
     "name": "gatsby-plugin-monetization",
-    "version": "1.0.0-rc.2",
+    "version": "1.0.0-rc.3",
     "description": "Helpers and hooks to speed up your integration with Web Monetization API",
     "author": "Muhammad Ali <hi@muhammadali.io>",
     "license": "MIT",
@@ -12,58 +12,48 @@
         "monetization",
         "web-monetization"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mrmuhammadali/gatsby-plugin-monetization"
-    },
+    "homepage": "https://github.com/mrmuhammadali/gatsby-plugin-monetization/tree/master#readme",
+    "repository": "https://github.com/mrmuhammadali/gatsby-plugin-monetization",
+    "main": "index.js",
     "private": false,
     "scripts": {
-        "build": "rollup -c",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "docs": "cd docs && yarn dev"
+        "build": "babel src --out-dir . --ignore **/__tests__",
+        "prepare": "cross-env NODE_ENV=production npm run build",
+        "prepublishOnly": "yarn lint",
+        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged && yarn test"
+            "pre-commit": "lint-staged"
         }
     },
     "lint-staged": {
-        "*.{js,ts,tsx}": [
-            "eslint --fix"
-        ],
         "*.js": "eslint --cache --fix"
     },
     "dependencies": {
         "react-monetize": "^1.0.0-rc.5"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^12.0.0",
-        "@rollup/plugin-node-resolve": "^8.0.0",
-        "@testing-library/jest-dom": "^5.9.0",
-        "@testing-library/react": "^10.1.0",
-        "@types/jest": "^25.2.3",
-        "@types/react": "^16.9.35",
-        "@typescript-eslint/eslint-plugin": "^3.1.0",
-        "@typescript-eslint/parser": "^3.1.0",
+        "@babel/cli": "^7.10.1",
+        "@babel/core": "^7.10.2",
+        "babel-eslint": "^10.1.0",
+        "babel-preset-gatsby-package": "^0.4.3",
+        "cross-env": "^7.0.2",
         "eslint": "^7.1.0",
         "eslint-config-prettier": "^6.11.0",
+        "eslint-config-react-app": "^5.2.1",
+        "eslint-plugin-flowtype": "^5.1.3",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-prettier": "^3.1.3",
         "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^4.0.4",
         "gatsby": "^2.23.0",
         "husky": ">=4",
-        "jest": "^26.0.1",
         "lint-staged": ">=10",
         "prettier": "^2.0.5",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "rollup": "^2.13.1",
-        "rollup-plugin-peer-deps-external": "^2.2.2",
-        "rollup-plugin-terser": "^6.1.0",
-        "rollup-plugin-typescript2": "^0.27.0",
-        "ts-jest": "^26.1.0",
-        "typescript": "^3.9.3"
+        "react-dom": "^16.13.1"
     },
     "peerDependencies": {
         "gatsby": ">=2.x",
@@ -72,10 +62,5 @@
     },
     "engines": {
         "node": ">=10.12.0"
-    },
-    "main": "build/index.js",
-    "module": "build/index.es.js",
-    "files": [
-        "build"
-    ]
+    }
 }
