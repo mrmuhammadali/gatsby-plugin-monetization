@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-plugin-monetization-playground",
+  "private": true,
+  "description": "A simple playground in gatsby to play around with monetization api",
+  "version": "0.1.0",
+  "author": "Muhammad Ali <hi@muhammadali.io>",
+  "dependencies": {
+    "gatsby": "^2.22.15",
+    "gatsby-image": "^2.4.5",
+    "gatsby-plugin-monetization": "^1.0.0-rc.6",
+    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.5.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin-monetization"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}

@@ -41,6 +41,18 @@ module.exports = {
 };
 ```
 
+## Examples
+
+To setup playground locally, run following commands (without -) in sequence:
+
+```sh
+- git clone git@github.com:mrmuhammadali/gatsby-plugin-monetization.git
+- cd gatsby-plugin-monetization/examples
+- yarn install
+- yarn start
+```
+
+
 ## Author
 
 👤 **Muhammad Ali <hi@muhammadali.io>**

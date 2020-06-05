@@ -20,7 +20,8 @@
         "build": "babel src --out-dir . --ignore **/__tests__",
         "prepare": "cross-env NODE_ENV=production npm run build",
         "prepublishOnly": "yarn lint",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+        "gatsby": "gatsby"
     },
     "husky": {
         "hooks": {
