@@ -70,12 +70,12 @@ lib
 *.swo
 .idea/
 
+/examples/
+/src/
 .cache/
 .tmp/
-public/
 
-/gatsby-browser.js
-/gatsby-ssr.js
-/gatsby-node.js
-/index.js
-/wrap-with-provider.js
+/.babelrc
+/.eslintrc.js
+/.prettierrc
+/.editorconfig
