@@ -1,5 +1,5 @@
 import React from "react"
-import { useContent, useStatus } from "gatsby-plugin-monetization"
+import { useContent } from "gatsby-plugin-monetization"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -7,9 +7,7 @@ import SEO from "../components/seo"
 import { startMonetization, stopMonetization } from "../utils"
 
 const IndexPage = () => {
-  const { state } = useStatus()
   const { isMonetized } = useContent()
-  console.log(state)
 
   return (
     <Layout>
