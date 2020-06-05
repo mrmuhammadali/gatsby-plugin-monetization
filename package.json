@@ -1,6 +1,6 @@
 {
     "name": "gatsby-plugin-monetization",
-    "version": "1.0.0-rc.1",
+    "version": "1.0.0-rc.2",
     "description": "Helpers and hooks to speed up your integration with Web Monetization API",
     "author": "Muhammad Ali <hi@muhammadali.io>",
     "license": "MIT",
