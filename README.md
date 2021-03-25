@@ -55,7 +55,7 @@ To setup playground locally, run following commands (without -) in sequence:
 
 ## Author
 
-👤 **Muhammad Ali <hi@muhammadali.io>**
+👤 **Muhammad Ali <hi@muhammadali.dev>**
 
 -   Twitter: [@muhammadali_io](https://twitter.com/muhammadali_io)
 -   Github: [@mrmuhammadali](https://github.com/mrmuhammadali)
